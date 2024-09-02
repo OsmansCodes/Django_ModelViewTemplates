@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h2>This is Contact Page </h2>
+    <h2>This is my email address: {{emailadd}} </h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos doloribus nesciunt animi vitae excepturi provident asperiores ducimus quidem dolorum iusto?</p>
+     <ol>
+        {% for profile in socialProfiles %}
+        <li> {{profile}} </li>
+        {% endfor %}
+     </ol>
+     <p>
+        Our head quarters is:
+        {% if hq == "d" %}
+        <strong>Dhaka</strong>
+        {% elif hq == "k" %}
+        <strong>Khulna</strong>
+        {% elif hq == "b" %}
+        <strong>Bogura</strong>
+        {% else %}
+        <strong>Unknown Area</strong>
+        {% endif %}
+     </P>
+     <p>
+      Your Get: 
+        {% if mark == "80"  %}
+        <strong>A+</strong>
+        {% elif mark == "70" %}
+        <strong>A</strong>
+        {% elif mark == "50" %}
+        <strong>B</strong>
+        {% else %}
+        <strong>Fail</strong>
+        {% endif %}
+     </P>
+     {% endblock %}

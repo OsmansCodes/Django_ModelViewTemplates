@@ -1,0 +1,42 @@
+[
+    {
+        "model": "todo_app.task",
+        "pk":1,
+        "fields":{
+            "title":"Buy milks",
+            "description": "Get 2% milk from store",
+            "completed": false,
+            "created_at": "2024-08-30 12:00:00"
+        }
+    },
+    {
+        "model": "todo_app.task",
+        "pk":2,
+        "fields":{
+            "title":"walk with the dog",
+            "description": "Take Max for a 30-min walk",
+            "completed": true,
+            "created_at": "2024-08-31 12:00:00"
+        }
+    },
+    {
+        "model": "todo_app.task",
+        "pk":3,
+        "fields":{
+            "title":"do laundry",
+            "description": "wash, dry and fold cloth",
+            "completed": false,
+            "created_at": "2024-09-01 12:00:00"
+        }
+    },
+    {
+        "model": "todo_app.task",
+        "pk":4,
+        "fields":{
+            "title":"Study for exam",
+            "description": "Review all the notes and guide",
+            "completed": false,
+            "created_at": "2024-09-05 12:00:00"
+        }
+    }
+]
